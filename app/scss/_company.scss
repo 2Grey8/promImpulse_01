@@ -1,0 +1,287 @@
+.company{
+  width: 192rem;
+  background-image: url(../img/bgcompany.png);
+  @include respond(phone){
+    display: block;
+    width: 60rem;
+    background-image: none;
+  }
+
+  @include respond(port){
+    width: 90rem;
+    display: block;
+    background-image: none;
+  }
+
+  @include respond(land){
+    width: 120rem;
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__inner{
+    display: block;
+    width: 192rem;
+    height: 66.5rem;
+    margin: 0 auto;
+    padding-top: 7.2rem;
+    padding-left: 18rem;
+    background-repeat: no-repeat;
+
+    @include respond(phone){
+      display: block;
+      width: 60rem;
+      margin-bottom: 6rem;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 6rem;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 6rem;
+      padding-top: 7.2rem;
+      padding-right: 28rem;
+    }
+  }
+
+  &__wrap{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 185px;
+    position: relative;
+  }
+
+  &__container{
+    width: 1440px;
+    overflow: hidden;
+  }
+
+  &__track{
+    display: flex;
+    transition: .2s;
+  }
+
+  &__item{
+    height: 522px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  &__group{
+    display: flex;
+    width: 797px;
+    margin: 0 auto;
+    margin-left: 100px;
+  }
+
+  &__box{
+    display: block;
+    width: 797px;
+    height: 522px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background: #FAFAFA;
+
+    @include respond(phone){
+      display: block;
+      width: 60rem;
+      margin: 0 auto;
+      margin-left: 35rem;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      display: block;
+      margin: 0 auto;
+      margin-left: 35rem;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__title{
+    display: block;
+    width: 26.5rem;
+    margin-bottom: 2rem;
+    margin-left: 13.7rem;
+
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 150%;
+    color: #000000;
+
+    @include respond(phone){
+      width: 35rem;
+      display: block;
+      margin: 0 auto;
+    }
+
+    @include respond(port){
+      width: 35rem;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__text{
+    display: block;
+    width: 697px;
+    margin-bottom: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    text-align: left;
+
+    @include respond(phone){
+      display: block;
+      width: 60rem;
+      margin: 0;
+    }
+
+    @include respond(port){
+      display: block;
+      width: 90rem;
+      margin: 0;
+    }
+  }
+
+  &__paragraph{
+    display: block;
+    margin-bottom: 3rem;
+
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 180%;
+    color: #434343;
+  }
+
+  &__link{
+    margin-left: 5rem;
+    text-align: left;
+
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 180%;
+    color: #000000;
+  }
+
+  &__btn{
+    display: block;
+    width: 70px;
+    height: 40px;
+    border: 1px solid #DBDBDB;
+    background: #118BDD;
+  }
+
+  &__btn:hover{
+    background: #32A1DF;
+  }
+
+  &__btn:disabled{
+    background: #FFFFFF;
+  }
+
+  &__btn_prev:disabled::before{
+    content: "";
+    display: block;
+    width: 11px;
+    height: 11px;
+    margin-left: 2.8rem;
+    border: solid #DBDBDB;
+    border-width: 2px 2px 0 0;
+    transform: rotate(-135deg);
+  }
+
+  &__btn_next:disabled::before{
+    content: "";
+    display: block;
+    width: 11px;
+    height: 11px;
+    margin-left: 2.8rem;
+    border: solid #DBDBDB;
+    border-width: 2px 2px 0 0;
+    transform: rotate(45deg);
+  }
+
+  &__btn_prev{
+    position: absolute;
+    top: 105.5%;
+    right: 350px;
+  }
+
+  &__btn_prev::before{
+    content: "";
+    display: block;
+    width: 11px;
+    height: 11px;
+    margin-left: 2.8rem;
+    border: solid #fff;
+    border-width: 2px 2px 0 0;
+    transform: rotate(-135deg);
+  }
+
+  &__btn_next{
+    position: absolute;
+    top: 105.5%;
+    right: 279px;
+  }
+
+  &__btn_next::before{
+    content: "";
+    display: block;
+    width: 11px;
+    height: 11px;
+    margin-left: 2.8rem;
+    border: solid #fff;
+    border-width: 2px 2px 0 0;
+    transform: rotate(45deg);
+  }
+
+  &__dots{
+    display: none;
+    margin-right: 3%;
+    text-align: center;
+  }
+
+  &__dot{
+    display: inline-block;
+    margin: 0 10px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #219653;
+    border-radius: 50%;
+    outline: none;
+  }
+
+  &__dot:hover,
+  &__dot:focus{
+    border-color: rgba(26, 101, 174, 0.7);
+  }
+
+  &__dot_active{
+    background-color: #219653;
+    color: rgba(26, 101, 174, 0.7);
+  }
+
+  &__dot_active:hover,
+  &__dot_active:focus{
+    border-color: transparent;
+    background-color: rgba(26, 101, 174, 0.7);
+  }
+}

@@ -1,0 +1,230 @@
+.header{
+  &__item{
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  &__contact{
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+
+    span{
+      font-size: 14px;
+      line-height: 17px;
+      color: #8C94A6;
+    }
+  }
+
+  &__title{
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 54px;
+    line-height: 150%;
+    color: #FFFFFF;
+
+    @include respond(phone){
+      font-family: 'TT Norms';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 30px;
+      line-height: 150%;
+      text-align: center;
+      color: #FFFFFF;
+    }
+
+    @include respond(port){
+      font-family: 'TT Norms';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 30px;
+      line-height: 150%;
+      text-align: center;
+      color: #FFFFFF;
+    }
+  }
+
+  &__text{
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 150%;
+    color: #CFCFCF;
+  }
+
+  &__box{
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+
+    span{
+      font-weight: normal;
+      font-size: 14px;
+      color: #C9C9C9;
+    }
+  }
+}
+
+.activity{
+  width: 192rem;
+
+  &__title{
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 150%;
+    color: #000000;
+  }
+
+  &__text{
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+    background: #118BDD;
+  }
+
+  &__link{
+    color: #fff;
+    background: #32A1DF;
+  }
+}
+
+.partner{
+  width: 192rem;
+
+  &__title{
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 150%;
+    color: #000000;
+  }
+}
+
+.objects{
+  width: 192rem;
+
+  &__title{
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 150%;
+    color: #000000;
+  }
+
+  &-title{
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+    color: #000000;
+  }
+
+  &-adress{
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #000000;
+  }
+
+  &-text{
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #8B8B8B;
+
+  }
+
+  &-btn{
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+  }
+}
+
+.news{
+  &-title{
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 150%;
+    color: #118BDD;
+  }
+
+  &-text{
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #434343;
+  }
+
+  &__date{
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+}
+
+.company{
+  &__title{
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 150%;
+    color: #000000;
+  }
+
+  &__text{
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #434343;
+  }
+
+  &__btn{
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 180%;
+    color: #000000;
+  }
+}

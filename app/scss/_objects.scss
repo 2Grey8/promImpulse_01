@@ -1,0 +1,431 @@
+.objects{
+  width: 192rem;
+
+  &__wrap{
+    display: block;
+    width: 192rem;
+    margin: 0 auto;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    margin-bottom: 12rem;
+
+    @include respond(phone){
+      width: 60rem;
+      display: block;
+      margin: 0 auto;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      display: block;
+      margin: 0 auto;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__title{
+    display: block;
+    width: 32.2rem;
+    margin-left: 37rem;
+    margin-bottom: 5rem;
+    text-align: left;
+
+    @include respond(phone){
+      width: 60rem;
+      display: block;
+      margin-left: 0;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      display: block;
+      margin: 0 auto;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__inner{
+    width: 138rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    @include respond(phone){
+      width: 60rem;
+      display: block;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      display: block;
+    }
+
+    @include respond(land){
+      width: 120rem;
+    }
+  }
+
+  &__group{
+    display: block;
+    width: 20rem;
+    margin: 0 auto;
+    margin-top: 16rem;
+
+    @include respond(phone){
+      width: 60rem;
+      display: flex;
+      justify-content: space-around;
+      margin: 0;
+      margin-bottom: 5rem;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      display: flex;
+      justify-content: space-around;
+      margin: 0;
+      margin-bottom: 5rem;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      display: block;
+    }
+  }
+
+  &__container{
+    display: block;
+    margin-bottom: 10rem;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+
+    &::before{
+      content: "";
+      display: block;
+      width: 40px;
+      height: 40px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+      position: absolute;
+      top: 0rem;
+      left: -2rem;
+    }
+
+    &_1::before{
+      background-image: url(../img/checked.png);
+    }
+
+    &_2::before{
+      background-image: url(../img/sandClock.png);
+    }
+  }
+
+  &__subtitle{
+    display: block;
+    margin-bottom: 1rem;
+
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 94px;
+    text-transform: uppercase;
+    color: #118BDD;
+  }
+
+  &__text{
+    display: block;
+
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #8B8B8B;
+  }
+
+  &__mob{
+    @include respond(phone){
+      width: 60rem;
+      display: block;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      display: block;
+    }
+
+    @include respond(land){
+      width: 90rem;
+      display: block;
+      margin-left: -100rem;
+      margin-top: 10rem;
+    }
+  }
+
+  &__imgBox{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+
+    @include respond(phone){
+      width: 60rem;
+      display: none;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      display: none;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      display: none;
+    }
+  }
+
+  &__img{
+    display: block;
+    width: 103rem;
+    height: 69.5rem;
+    margin: 0 auto;
+  }
+
+  &__polygon{
+    display: block;
+    width: 34px;
+    height: 43.13px;
+
+    &_1{
+      position: absolute;
+      top: 12rem;
+      left: 29rem;
+    }
+
+    &_2{
+      position: absolute;
+      top: 13rem;
+      left: 17rem;
+    }
+
+    &_3{
+      position: absolute;
+      top: 43rem;
+      left: 10rem;
+    }
+
+    &_4{
+      position: absolute;
+      top: 51rem;
+      left: 5rem;
+    }
+
+    &_5{
+      position: absolute;
+      top: 45rem;
+      left: 20rem;
+    }
+
+    &_6{
+      position: absolute;
+      top: 35rem;
+      left: 20rem;
+    }
+
+    &_7{
+      position: absolute;
+      top: 44rem;
+      left: 30rem;
+    }
+
+    &_8{
+      position: absolute;
+      top: 45rem;
+      left: 42rem;
+    }
+
+    &_9{
+      position: absolute;
+      top: 57rem;
+      left: 25rem;
+    }
+
+    &_10{
+      position: absolute;
+      top: 36rem;
+      left: 44rem;
+    }
+
+    &_11{
+      position: absolute;
+      top: 27rem;
+      left: 37rem;
+    }
+
+    &_12{
+      position: absolute;
+      top: 31rem;
+      left: 58rem;
+    }
+
+    &_13{
+      position: absolute;
+      top: 42rem;
+      left: 56rem;
+    }
+
+    &_14{
+      position: absolute;
+      top: 15rem;
+      left: 75rem;
+    }
+
+    &_15{
+      position: absolute;
+      top: 36rem;
+      left: 72rem;
+    }
+
+    &_16{
+      position: absolute;
+      top: 43rem;
+      left: 85rem;
+    }
+
+    &_17{
+      position: absolute;
+      top: 12rem;
+      left: 88rem;
+    }
+  }
+
+  &__box{
+    display: none;
+    width: 420px;
+    height: 479px;
+    text-align: left;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 50px rgba(44, 59, 99, 0.15);
+    position: absolute;
+    top: 40rem;
+    left: 58rem;
+
+    &-img{
+      display: block;
+      width: 420px;
+      height: 250px;
+    }
+
+    &-title{
+      display: block;
+      margin-top: 2rem;
+      margin-left: 2rem;
+      margin-bottom: .6rem;
+
+      font-family: "TT Norms";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 150%;
+      color: #000000;
+    }
+
+    &-subtitle{
+      display: block;
+      margin-left: 5rem;
+      margin-bottom: 1rem;
+
+      font-family: "TT Norms";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 150%;
+      color: #000000;
+    }
+
+    &-group{
+      width: 25rem;
+      margin-left: 2rem;
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-box{
+      display: block;
+
+      font-family: "TT Norms";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      color: #8B8B8B;
+
+      span{
+        display: block;
+        margin-top: .5rem;
+
+        font-family: "TT Norms";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000000;
+      }
+    }
+
+    &-link{
+      display: block;
+      width: 20rem;
+      margin-left: 2rem;
+      padding-top: 1.5rem;
+      padding-bottom: 1.4rem;
+      text-align: center;
+      text-decoration: none;
+
+      font-family: "TT Norms";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 150%;
+      color: #FFFFFF;
+      background: #118BDD;
+      position: relative;
+
+      &::before{
+        content: "";
+        width: 5rem;
+        height: 5rem;
+        background: #32A1DF;
+        position: absolute;
+        top: 0rem;
+        left: 20rem;
+      }
+
+      &::after{
+        content: "";
+        width: 14px;
+        height: 14px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../img/arrow.png);
+        position: absolute;
+        top: 1.9rem;
+        left: 21.7rem;
+      }
+    }
+  }
+}

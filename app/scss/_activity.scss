@@ -1,0 +1,123 @@
+.activity{
+  width: 192rem;
+
+  &__inner{
+    display: block;
+    width: 192rem;
+    margin: 0 auto;
+    margin-bottom: 12rem;
+
+    @include respond(phone){
+      width: 60rem;
+    }
+
+    @include respond(land){
+      width: 120rem;
+    }
+  }
+
+  &__title{
+    display: block;
+    width: 610px;
+    margin-left: 35.8rem;
+    margin-bottom: 5rem;
+
+    @include respond(phone){
+      margin-left: 0;
+      text-align: left;
+    }
+
+    @include respond(port){
+      margin: 0 auto;
+      margin-bottom: 5rem;
+    }
+
+    @include respond(land){
+      margin: 0 auto;
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__group{
+    width: 190rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    @include respond(phone){
+      width: 60rem;
+      display: block;
+    }
+
+    @include respond(port){
+      display: block;
+      width: 59rem;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    @include respond(land){
+      display: block;
+      width: 59rem;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+  }
+
+  &__container{
+    display: block;
+    width: 62rem;
+    position: relative;
+
+    @include respond(phone){
+      width: 60rem;
+      margin-bottom: 5rem;
+    }
+
+    @include respond(port){
+      margin-bottom: 5rem;
+    }
+
+    @include respond(land){
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__img{
+    display: block;
+    background-size: cover;
+    width: 100%;
+
+    @include respond(phone){
+      width: 60rem;
+      display: block;
+    }
+  }
+
+  &__box{
+    width: 62rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 84%;
+  }
+
+  &__text{
+    display: block;
+    width: 54rem;
+    padding-top: 2.7rem;
+    padding-bottom: 2.6rem;
+    padding-left: 3rem;
+    text-align: left;
+  }
+
+  &__link{
+    display: inline-block;
+    width: 8rem;
+    padding-top: 3.3rem;
+    padding-bottom: 3.4rem;
+  }
+}

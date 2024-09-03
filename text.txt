@@ -1,0 +1,3 @@
+font-family: "TT Norms";
+font-style: normal;
+font-weight: 500, 800, normal, bold;

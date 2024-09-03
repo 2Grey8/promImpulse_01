@@ -1,0 +1,248 @@
+.news{
+  width: 192rem;
+
+  &__inner{
+    display: block;
+    width: 192rem;
+    margin: 0 auto;
+    margin-bottom: 12rem;
+    position: relative;
+
+    @include respond(phone){
+      width: 60rem;
+      display: block;
+      margin: 0 auto;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      display: block;
+      margin: 0 auto;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__title{
+    display: block;
+    width: 18.8rem;
+    margin-left: 35.8rem;
+    margin-bottom: 5rem;
+
+    @include respond(phone){
+      width: 60rem;
+      display: block;
+      margin-left: 0;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 5rem;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 5rem;
+    }
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 150%;
+    color: #000000;
+  }
+
+  &__wrap{
+    display: block;
+    width: 192rem;
+    margin: 0 auto;
+
+    @include respond(phone){
+      width: 60rem;
+      display: block;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      display: block;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      display: block;
+    }
+  }
+
+  &__btn{
+    display: block;
+    width: 13rem;
+    position: absolute;
+    top: 2.5rem;
+    left: 149rem;
+
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    color: #000000;
+
+    &::before{
+      content: "";
+      display: block;
+      width: 8px;
+      height: 8px;
+      border: solid #000;
+      border-width: 2px 2px 0 0;
+      transform: rotate(45deg);
+      position: absolute;
+      top: 0.4rem;
+      left: 14.2rem;
+    }
+  }
+
+  &__group{
+    width: 138rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    @include respond(phone){
+      width: 60rem;
+      display: block;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      display: block;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      display: block;
+    }
+
+    &_hidden{
+      display: none;
+      margin-top: 15px;
+    }
+  }
+
+  &__container{
+    width: 68rem;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+
+    @include respond(phone){
+      width: 60rem;
+      display: block;
+      margin-bottom: 30rem;
+    }
+
+    @include respond(port){
+      display: block;
+      margin-bottom: 10rem;
+    }
+
+    @include respond(land){
+      display: block;
+      margin-bottom: 10rem;
+    }
+  }
+
+  &__img{
+    display: block;
+    background-size: cover;
+    width: 100%;
+  }
+
+  &__box{
+    display: block;
+    width: 50rem;
+    height: 25.7rem;
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+    background: #FAFAFA;
+    position: absolute;
+    top: 24.3rem;
+
+    @include respond(phone){
+      width: 60rem;
+      display: block;
+      margin-top: 20rem;
+    }
+
+    &-title{
+      display: block;
+      width: 44rem;
+      margin-bottom: 2rem;
+      text-align: left;
+
+      font-family: "TT Norms";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 150%;
+      color: #000000;
+
+      &:hover{
+        color: #118BDD;
+      }
+    }
+
+    &-text{
+      display: block;
+      width: 44rem;
+      text-align: left;
+
+      font-family: "TT Norms";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 150%;
+      color: #434343;
+    }
+  }
+
+  &__date{
+    display: block;
+    width: 18rem;
+    padding-top: 2.8rem;
+    padding-bottom: 2.8rem;
+    background: #118BDD;
+    position: absolute;
+    top: 42rem;
+    left: 50rem;
+
+    @include respond(phone){
+      display: block;
+      top: 35.5rem;
+      left: 42rem;
+    }
+
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .accordion-item_active .accordion-item__content{
+    display: flex;
+    justify-content: space-between;
+  }
+}
